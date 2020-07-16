@@ -18,9 +18,13 @@
     input{
         @include flexCenterColumn;
         border-radius: 8px;
+        margin-top: 5%;
+        font-size: 2rem;
+        border: none;
     }
     button{
         @include flexCenterColumn;
+        margin-top: 2%;
     }
 }
 

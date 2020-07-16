@@ -33,6 +33,9 @@
           align-items: center;
   margin: auto;
   border-radius: 8px;
+  margin-top: 5%;
+  font-size: 2rem;
+  border: none;
 }
 
 .header button {
@@ -50,5 +53,6 @@
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
+  margin-top: 2%;
 }
 /*# sourceMappingURL=index.css.map */
