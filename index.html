@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="index.css">
+    <link rel="stylesheet" href="node_modules\bootstrap\dist\css\bootstrap.min.css">
+
+    <script src="index.js"></script>
+    <script src="node_modules\bootstrap\dist\js\bootstrap.min.js"></script>
+
+    <title>WeatherApp</title>
+</head>
+<body>
+
+    <div class="header">
+        <input type="text" placeholder="Search" class="text-center w-75 p-2" id="inputtxt">
+        <button id="btn" type="button" class="btn btn-info btn-lg px-4">Search...</button>
+        <div class="center">
+            <h2 id="city" class="d-flex justify-content-center">London, UK</h2>
+            <strong id="deg" class="d-flex justify-content-center">15&deg;C</strong>
+            <div class="d-flex justify-content-center">
+                <h2 id="min" class="mx-5">8&deg;C</h2>
+                <h2 id="max" class="mx-5">16&deg;C</h2>
+            </div>
+            <div class="d-flex justify-content-center" id="day">Monday</div>
+            <div id="mood" class="d-flex justify-content-center">Sunny</div>
+        </div>
+    </div>
+
+</body>
+</html>

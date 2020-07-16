@@ -1,0 +1,28 @@
+@import "sasscolors";
+@import "sassmixins";
+
+*{
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.body{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.header{
+    height: 100vh;
+    margin: 0;
+    overflow: hidden;
+    width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(gallery/sunnybeach.png);
+    input{
+        @include flexCenterColumn;
+        border-radius: 8px;
+    }
+    button{
+        @include flexCenterColumn;
+    }
+}
+
+
+
