@@ -14,17 +14,53 @@
     margin: 0;
     overflow: hidden;
     width: 100%;
+    //background-color: #181818;
     background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(gallery/sunnybeach.png);
-    input{
+    input[type=text]{
         @include flexCenterColumn;
-        border-radius: 8px;
-        margin-top: 5%;
-        font-size: 2rem;
+        appearance: none;
         border: none;
+        outline: none;
+        background: none;
+
+        background-color: rgba(255, 255, 255, 0.26);
+        border-radius: 16px 16px;
+        box-shadow: 0 5px rgba(0,0,0,0.2);
+
+        color: #fff;
+        font-size: 2.5em;
+        text-align: center;
+        font-weight: 700;
+
+        transition: 0.4s ease;
+
+        margin: 5% auto auto auto;
+        &:focus{
+            background-color: rgba(255,255,255,0.75);
+            box-shadow: 0 5px rgba(0,0,0,0.3);
+            text-align: center;
+
+            color: #444444;
+        }
     }
     button{
         @include flexCenterColumn;
+        color: #fff !important;
+        text-transform: uppercase;
+        text-decoration: none;
+        background: #0eac43;
+        padding: 8px 24px;
+        border-radius: 16px;
+        border: none;
+        transition: all 0.4s ease 0s;
         margin-top: 2%;
+        font-size: 2rem;
+        &:hover{
+            background: #434343;
+            letter-spacing: 1px;
+            box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
+            transition: all 0.4s ease 0s;
+        }
     }
 }
 
