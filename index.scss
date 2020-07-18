@@ -14,8 +14,7 @@
     margin: 0;
     overflow: hidden;
     width: 100%;
-    //background-color: #181818;
-    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(gallery/sunnybeach.png);
+    background-image: linear-gradient(rgba(0,0,0,0.8),rgba(0,0,0,0.8),rgba(0,0,0,0.8)), url(gallery/sunnybeach.png);
     input[type=text]{
         @include flexCenterColumn;
         appearance: none;
@@ -30,7 +29,7 @@
         color: #fff;
         font-size: 2.5em;
         text-align: center;
-        font-weight: 700;
+        font-weight: 600;
 
         transition: 0.4s ease;
 
@@ -45,24 +44,56 @@
     }
     button{
         @include flexCenterColumn;
-        color: #fff !important;
+        color: #fff;
         text-transform: uppercase;
         text-decoration: none;
-        background: #0eac43;
+        background: #5a5a5a;
         padding: 8px 24px;
         border-radius: 16px;
         border: none;
         transition: all 0.4s ease 0s;
         margin-top: 2%;
         font-size: 2rem;
+        font-weight: 500;
         &:hover{
-            background: #434343;
+            background: #ffffff;
+            color: rgb(0, 0, 0);
             letter-spacing: 1px;
             box-shadow: 5px 40px -10px rgba(0,0,0,0.57);
             transition: all 0.4s ease 0s;
         }
     }
+    #city{
+        margin-top: 2.5%;
+        font-size: 4.5rem;
+        font-weight: 700;
+        
+    }
+    .temp-box{
+        width: 100%;
+        text-align: center;
+        display: block;
+        margin: auto;
+        .temp{
+            font-size: 4rem;
+            font-weight: 800;
+            color: $light-color;
+            margin: 1% auto auto auto;
+            display: inline-block;
+            padding: 80px;
+            background-color: rgba(255,255,255,0.2);
+            border-radius: 32px;
+        }
+    }
+    #day,#mood{
+        @include BigFont;
+        margin-top: 3%;
+    }
+
+
+    color: $light-color;
 }
+
 
 
 

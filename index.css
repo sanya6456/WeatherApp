@@ -13,8 +13,9 @@
   margin: 0;
   overflow: hidden;
   width: 100%;
-  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.6)), color-stop(rgba(0, 0, 0, 0.6)), to(rgba(0, 0, 0, 0.6))), url(gallery/sunnybeach.png);
-  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)), url(gallery/sunnybeach.png);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(rgba(0, 0, 0, 0.8)), color-stop(rgba(0, 0, 0, 0.8)), to(rgba(0, 0, 0, 0.8))), url(gallery/sunnybeach.png);
+  background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url(gallery/sunnybeach.png);
+  color: #c4c4c4;
 }
 
 .header input[type=text] {
@@ -45,7 +46,7 @@
   color: #fff;
   font-size: 2.5em;
   text-align: center;
-  font-weight: 700;
+  font-weight: 600;
   -webkit-transition: 0.4s ease;
   transition: 0.4s ease;
   margin: 5% auto auto auto;
@@ -74,10 +75,10 @@
       -ms-flex-align: center;
           align-items: center;
   margin: auto;
-  color: #fff !important;
+  color: #fff;
   text-transform: uppercase;
   text-decoration: none;
-  background: #0eac43;
+  background: #5a5a5a;
   padding: 8px 24px;
   border-radius: 16px;
   border: none;
@@ -85,14 +86,46 @@
   transition: all 0.4s ease 0s;
   margin-top: 2%;
   font-size: 2rem;
+  font-weight: 500;
 }
 
 .header button:hover {
-  background: #434343;
+  background: #ffffff;
+  color: black;
   letter-spacing: 1px;
   -webkit-box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
           box-shadow: 5px 40px -10px rgba(0, 0, 0, 0.57);
   -webkit-transition: all 0.4s ease 0s;
   transition: all 0.4s ease 0s;
+}
+
+.header #city {
+  margin-top: 2.5%;
+  font-size: 4.5rem;
+  font-weight: 700;
+}
+
+.header .temp-box {
+  width: 100%;
+  text-align: center;
+  display: block;
+  margin: auto;
+}
+
+.header .temp-box .temp {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #c4c4c4;
+  margin: 1% auto auto auto;
+  display: inline-block;
+  padding: 80px;
+  background-color: rgba(255, 255, 255, 0.2);
+  border-radius: 32px;
+}
+
+.header #day, .header #mood {
+  font-size: 4rem;
+  font-weight: 700;
+  margin-top: 3%;
 }
 /*# sourceMappingURL=index.css.map */
