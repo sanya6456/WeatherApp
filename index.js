@@ -22,7 +22,7 @@ function search(){
         console.log(data);
 
         cityfield.innerHTML=data['name'];
-        tempfield.innerHTML=data['main']['temp'];
+        tempfield.innerHTML=data['main']['temp']+' °C';
         moodfield.innerHTML=data['weather']['0']['main'];
     });
 
